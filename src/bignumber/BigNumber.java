@@ -2,11 +2,16 @@ package bignumber;
 
 public interface BigNumber {
     int length();
-    void shiftLeft();
-    void shiftRight();
-    void addDigit();
-    int getDigitAt();
+
+    void shiftLeft(int shift);
+
+    void shiftRight(int shift);
+
+
+    void addDigit(int digit);
+
+    int getDigitAt(int index);
     BigNumber copy();
-    BigNumber add();
+    BigNumber add(BigNumber other);
 
 }
